@@ -9,7 +9,7 @@ panel.plugin("kiah/accordion-block", {
 		        <details open v-for="item in content.accordion">
 		        <summary v-if="item.summary">{{ item.summary }}</summary>
 		        <summary v-else>Details</summary>
-		        {{ item.details }}
+		        <div v-html="item.details"></div>
 		        </details>
 		    </template>
 		</div>
