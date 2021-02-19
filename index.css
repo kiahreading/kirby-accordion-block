@@ -1,0 +1,10 @@
+.k-block-type-accordion details:not(:last-of-type) {
+	margin-bottom: .8rem;
+}
+.k-block-type-accordion summary {
+	font-weight: 600;
+	margin-bottom: .4rem;
+}
+.k-block-type-accordion summary:focus {
+    outline: none;
+}
