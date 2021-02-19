@@ -2,7 +2,7 @@
 
 This is a [custom block plugin](https://getkirby.com/docs/reference/panel/fields/blocks) for the [Kirby CMS](https://github.com/getkirby/kirby). It is used to add a custom accordion block that uses semantic HTML. Shipping without any CSS requirements, it is unopinionated but easy to style if you are so inclined.
 
-![alt text](https://github.com/kiahreading/kirby-accordion-block/kirby-accordion-block.png "Kirby Accordion Block panel view")
+![Kirby Accordion Block panel view](/kirby-accordion-block.png)
 
 ## Example
 <details open>
