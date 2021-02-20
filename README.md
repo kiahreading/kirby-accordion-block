@@ -22,3 +22,4 @@ They are sometimes also known as a [disclosure widget or a twistie](https://deve
 * Figure out a way to show in Panel preview whether editor has toggled to show open attribute on page load
 * Check it is accessible
 * Add installation guide ie. (where to save folder to and where to add block to yml)
+* Add composer.json
