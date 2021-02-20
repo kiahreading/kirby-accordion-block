@@ -14,7 +14,7 @@ This is a [custom block plugin](https://getkirby.com/docs/reference/panel/fields
 </details>
 
 ## Info
-An accordion is a used to show (and hide) HTML content. In the case of this plugin, this can be one or more collapsable elements.
+An accordion is used to show (and hide) HTML content. In the case of this plugin, this can be one or more collapsable elements.
 
 They are sometimes also known as a [disclosure widget or a twistie](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details).
 
