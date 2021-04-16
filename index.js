@@ -1,18 +1,39 @@
-panel.plugin("kiah/accordion-block", {
+panel.plugin("kiah/annotator-block", {
   blocks: {
-    accordion: `
-      	<div @dblclick="open">
-		    <template v-if="content.accordion.length === 0">
-		    	<details open><summary>Details</summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</details>
+    annotator: {
+    	computed: {
+		    captionMarks() {
+		      return this.field("caption", { marks: true }).marks;
+		    },
+		    src() {
+		      if (this.content.location === "web") {
+		        return this.content.src;
+		      }
+		      if (this.content.image[0] && this.content.image[0].url) {
+		        return this.content.image[0].url;
+		      }
+		      return false;
+		    },
+		  },
+    	template: `
+      	<k-block-figure
+		    :caption="content.caption"
+		    :caption-marks="captionMarks"
+		    :empty-text="$t('field.blocks.image.placeholder') + ' …'"
+		    :is-empty="!src"
+		    empty-icon="image"
+		    @open="open"
+		    @update="update"
+		  >
+		    <template>
+		      <img
+		        :alt="content.alt"
+		        :src="src"
+		        class="k-block-type-image-auto"
+		      >
 		    </template>
-		    <template v-else>
-		        <details open v-for="item in content.accordion">
-		        <summary v-if="item.summary">{{ item.summary }}</summary>
-		        <summary v-else>Details</summary>
-		        <div v-html="item.details"></div>
-		        </details>
-		    </template>
-		</div>
+		</k-block-figure>
     `
+    }
   }
 });

@@ -1,10 +1,9 @@
-.k-block-type-accordion details:not(:last-of-type) {
-	margin-bottom: .8rem;
+.k-block-type-annotator .k-block-figure-container {
+  display: block;
+  text-align: center;
+  line-height: 0;
 }
-.k-block-type-accordion summary {
-	font-weight: 600;
-	margin-bottom: .4rem;
-}
-.k-block-type-accordion summary:focus {
-    outline: none;
+.k-block-type-annotator-auto {
+  max-width: 100%;
+  max-height: 30rem;
 }
