@@ -1,10 +1,10 @@
 <?php
 
-Kirby::plugin('kiah/annotator-block', [
+Kirby::plugin('kiah/accordion-block', [
   'blueprints' => [
-    'blocks/annotator' => __DIR__ . '/blueprints/blocks/annotator.yml'
+    'blocks/accordion' => __DIR__ . '/blueprints/blocks/accordion.yml'
   ],
   'snippets' => [
-    'blocks/annotator' => __DIR__ . '/snippets/blocks/annotator.php'
+    'blocks/accordion' => __DIR__ . '/snippets/blocks/accordion.php'
   ]
 ]);

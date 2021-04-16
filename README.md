@@ -1,6 +1,6 @@
-# kirby-annatator-block
+# kirby-accordion-block
 
-This is a [custom block plugin](https://getkirby.com/docs/reference/panel/fields/blocks) for the [Kirby CMS](https://github.com/getkirby/kirby).
+This is a [custom block plugin](https://getkirby.com/docs/reference/panel/fields/blocks) for the [Kirby CMS](https://github.com/getkirby/kirby). It is used to add a custom accordion block that uses semantic HTML. Shipping without any CSS requirements, it is unopinionated but easy to style if you are so inclined.
 
 ![Kirby Accordion Block panel view](/kirby-accordion-block.png)
 
@@ -20,6 +20,6 @@ They are sometimes also known as a [disclosure widget or a twistie](https://deve
 
 ## Problems / ToDos
 * Figure out a way to show in Panel preview whether editor has toggled to show open attribute on page load
-* Check accessibility
+* Check it is accessible
 * Add installation guide ie. (where to save folder to and where to add block to yml)
 * Add composer.json
